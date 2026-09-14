@@ -14,14 +14,14 @@ export const Details = ({ income, expense }) => {
               Spendly
             </h1>
 
-            <p className="mt-2 text-cyan-400 lg:text-left text-sm sm:text-base xl:text-lg font-medium tracking-[0.2em] uppercase">
+            <p className="mt-2 text-cyan-400 lg:text-left text-xs sm:text-base xl:text-lg font-medium tracking-[0.2em] uppercase">
               Every Penny Matters
             </p>
           </div>
         </div>
 
         <div className="mt-8 flex flex-col lg:items-start">
-          <p className="text-white text-xl sm:text-2xl xl:text-3xl font-medium lg:text-left leading-relaxed tracking-wide">
+          <p className="text-white text-lg sm:text-xl xl:text-3xl font-medium lg:text-left leading-relaxed tracking-wide">
             Track smarter. Spend better. Save more.
           </p>
 
@@ -47,7 +47,7 @@ export const Details = ({ income, expense }) => {
         </div>
       </div>
       <div className=" items-center p-6 bg-gray-800/30 backdrop-blur-xl border border-white/10 rounded-xl mx-auto w-full animate-slide-down">
-        <div className="bg-slate-950 text-white flex items-center rounded-full sm:text-sm md:text-lg lg:text-xl w-fit mx-auto lg:mx-0">
+        <div className="bg-slate-950 text-white flex items-center rounded-full text-xs sm:text-sm md:text-lg lg:text-xl w-fit mx-auto lg:mx-0">
           <div
             className={`m-2 px-4 py-3 rounded-full transition-all cursor-pointer ${selectedTab === "balance" ? "bg-cyan-500/15 scale-105 text-cyan-400" : "hover:text-white text-gray-300"}`}
             onClick={() => setSelectedTab("balance")}
@@ -68,7 +68,7 @@ export const Details = ({ income, expense }) => {
                 <p className="text-xs sm:text-sm md:text-lg lg:text-md xl:text-lg text-cyan-400">
                   CURRENT BALANCE
                 </p>
-                <h1 className="text-5xl lg:text-4xl xl:text-5xl text-white font-semibold">
+                <h1 className=" text-4xl sm:text-5xl lg:text-4xl xl:text-5xl text-white font-semibold">
                   {income - expense}
                 </h1>
               </div>
@@ -78,7 +78,7 @@ export const Details = ({ income, expense }) => {
                 <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-gray-300">
                   TOTAL INCOME:
                 </p>
-                <h4 className="text-3xl text-green-500 font-semibold">
+                <h4 className="text-2xl sm:text-3xl text-green-500 font-semibold">
                   {income}
                 </h4>
               </div>
@@ -86,7 +86,7 @@ export const Details = ({ income, expense }) => {
                 <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-gray-300">
                   TOTAL EXPENSE:
                 </p>
-                <h4 className="text-3xl text-red-500 font-semibold">
+                <h4 className="text-2xl sm:text-3xl text-red-500 font-semibold">
                   {expense}
                 </h4>
               </div>
@@ -100,7 +100,7 @@ export const Details = ({ income, expense }) => {
                 <p className="text-xs sm:text-sm md:text-lg lg:text-md xl:text-lg text-cyan-400">
                   MONTHLY EXPENSES
                 </p>
-                <h1 className="text-5xl lg:text-4xl xl:text-5xl text-red-500 font-semibold">
+                <h1 className="text-4xl sm:text-5xl lg:text-4xl xl:text-5xl text-red-500 font-semibold">
                   {expense}
                 </h1>
               </div>
@@ -110,7 +110,7 @@ export const Details = ({ income, expense }) => {
                 <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-gray-300">
                   MONTH INCOME:
                 </p>
-                <h4 className="text-3xl text-green-500 font-semibold">
+                <h4 className="text-2xl sm:text-3xl text-green-500 font-semibold">
                   {income}
                 </h4>
               </div>
@@ -118,7 +118,7 @@ export const Details = ({ income, expense }) => {
                 <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-gray-300">
                   MONTH EXPENSE:
                 </p>
-                <h4 className="text-3xl text-red-500 font-semibold">
+                <h4 className="text-2xl sm:text-3xl text-red-500 font-semibold">
                   {expense}
                 </h4>
               </div>

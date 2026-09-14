@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-950 min-h-screen items-center px-20 pb-20">
+    <div className="bg-slate-950 min-h-screen items-center px-5 sm:px-10 lg:px-20 pb-20">
       <Header />
       <Details income={income} expense={expense} />
       <Form
