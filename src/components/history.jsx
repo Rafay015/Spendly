@@ -4,7 +4,7 @@ import { ArrowDown } from "lucide-react";
 
 export const History = ({ transaction, deleteTransaction }) => {
   return (
-    <div className="mt-16 bg-gray-800/30 rounded-xl border border-white/10 backdrop-blur-xl p-8 mt-10 sm:mt-20 lg:mt-0">
+    <div className="mt-16 bg-gray-800/30 rounded-xl border border-white/10 backdrop-blur-xl p-8">
       <h2 className="text-white font-semibold text-xl sm:text-2xl lg:text-3xl">History</h2>
       <br className="bg-white w-full" />
 

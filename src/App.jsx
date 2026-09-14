@@ -35,11 +35,20 @@ function App() {
   return (
     <div className="bg-slate-950 min-h-screen items-center px-5 sm:px-10 lg:px-20 pb-20">
       <Header />
-      <Details income={income} expense={expense} />
-      <Form
-        addTransaction={addTransaction}
-      />
-      {transactions.length > 0 && <History transaction={transactions} deleteTransaction={deleteTransaction} />}
+      <div className="mt-10 sm:mt-20 lg:mt-0">
+        <Details income={income} expense={expense} />
+      </div>
+      <div className="mt-10 sm:mt-20 lg:mt-0">
+        <Form addTransaction={addTransaction} />
+      </div>
+      <div className="mt-10 sm:mt-20 lg:mt-0">
+        {transactions.length > 0 && (
+          <History
+            transaction={transactions}
+            deleteTransaction={deleteTransaction}
+          />
+        )}
+      </div>
     </div>
   );
 }

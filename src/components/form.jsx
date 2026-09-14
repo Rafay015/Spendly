@@ -88,7 +88,7 @@ export const Form = ({ addTransaction }) => {
   return (
     <div ref={formRef}>
       <div
-        className={` flex flex-col gap-5 items-start mt-10 sm:mt-20 lg:mt-0 p-8 lg:p-12 bg-gray-800/30 backdrop-blur-xl border border-white/10 rounded-xl mx-auto w-full ${isVisible ? "animate-slide-up" : "opacity-0"}`}
+        className={` flex flex-col gap-5 items-start p-8 lg:p-12 bg-gray-800/30 backdrop-blur-xl border border-white/10 rounded-xl mx-auto w-full ${isVisible ? "animate-slide-up" : "opacity-0"}`}
       >
         <h1 className="text-white text-xl sm:text-2xl lg:text-3xl font-semibold">
           Add New Transaction
