@@ -35,13 +35,13 @@ function App() {
   return (
     <div className="bg-slate-950 min-h-screen items-center px-3 sm:px-6 lg:px-10 pb-20">
       <Header />
-      <div className="mt-10 sm:mt-20 lg:mt-0">
+      <div className="mt-10">
         <Details income={income} expense={expense} />
       </div>
-      <div className="mt-10 sm:mt-20 lg:mt-0">
+      <div className="mt-10">
         <Form addTransaction={addTransaction} />
       </div>
-      <div className="mt-10 sm:mt-20 lg:mt-0">
+      <div className="mt-10">
         {transactions.length > 0 && (
           <History
             transaction={transactions}

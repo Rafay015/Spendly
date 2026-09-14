@@ -164,7 +164,7 @@ export const Form = ({ addTransaction }) => {
           >
             <Label className="text-xs sm:text-sm lg:text-md font-medium text-gray-300">Date</Label>
             <div className="flex items-center min-w-0 w-full rounded-lg border border-white/10 bg-slate-950 px-2 sm:px-4 py-3 lg:py-5 text-xs sm:text-sm lg:text-lg">
-              <DateInput className="flex items-center min-w-0 overflow-hiddenx flex-1 text-white">
+              <DateInput className="flex items-center min-w-0 overflow-hidden flex-1 text-white">
                 {(segment) => (
                   <DateSegment
                     segment={segment}
