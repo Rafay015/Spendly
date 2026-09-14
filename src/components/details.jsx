@@ -4,7 +4,7 @@ export const Details = ({ income, expense }) => {
   const [selectedTab, setSelectedTab] = useState("balance");
 
   return (
-    <div className="flex flex-col lg:flex-row h-[calc(100vh-25*0.25rem)] gap-10 lg:gap-0 justify-center items-center">
+    <div className="flex flex-col lg:flex-row h-[calc(100vh-25*0.25rem)] gap-10 lg:gap-0 justify-center items-center mt-10 sm:mt-20 lg-mt-0">
       <div className="flex flex-col justify-center items-center lg:items-start w-full text-center px-6 animate-slide-up transition-all">
         <div className="relative">
           <div className="absolute -inset-6 bg-cyan-500/10 blur-3xl rounded-full" />
